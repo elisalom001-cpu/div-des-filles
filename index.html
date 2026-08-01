@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6e1f2b">
+  <meta name="description" content="Invitation officielle — A Vintage Tea Affair, dimanche 13 septembre 2026 à 18 h.">
+  <title>A Vintage Tea Affair | Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+  <button class="music" id="music" aria-label="Activer ou couper la musique">♪</button>
+  <aside class="countdown-dock" aria-label="Compte à rebours avant l’événement">
+    <span class="countdown-dock-title">13 sept.</span>
+    <div><strong id="dock-days">00</strong><span>j</span></div>
+    <div><strong id="dock-hours">00</strong><span>h</span></div>
+    <div><strong id="dock-minutes">00</strong><span>min</span></div>
+    <div><strong id="dock-seconds">00</strong><span>s</span></div>
+  </aside>
+
+  <main>
+    <section class="intro" id="intro">
+      <div class="intro-copy">
+        <p>La Division des Filles de la SOJAM</p>
+        <span>vous invite à</span>
+      </div>
+      <button class="envelope" id="openInvitation" aria-label="Ouvrir l’invitation">
+        <span class="letter">
+          <span class="letter-flower">❀</span>
+          <strong>A Vintage Tea Affair</strong>
+          <small>Pour vous</small>
+        </span>
+        <span class="env-back"></span><span class="env-left"></span><span class="env-right"></span><span class="env-bottom"></span><span class="env-flap"></span><span class="wax">S</span>
+      </button>
+      <h1>A Vintage Tea Affair</h1>
+      <p class="tap">Touchez l’enveloppe</p>
+    </section>
+
+    <section class="site" id="site" hidden>
+      <section class="hero section" id="invitation">
+        <div class="ornament">❦</div>
+        <p class="eyebrow">La Division des Filles de la SOJAM présente</p>
+        <h1><span>A Vintage</span> Tea Affair</h1>
+        <p class="theme">Aux temps des classiques !</p>
+        <p class="quote">Une soirée pour célébrer la grâce, l’amitié et la foi.</p>
+        <div class="teacup" aria-hidden="true">
+          <i class="steam s1"></i><i class="steam s2"></i><i class="steam s3"></i>
+          <div class="cup"></div><div class="saucer"></div>
+        </div>
+        <div class="date-pill"><strong>Dimanche 13 septembre 2026</strong><span>18 h 00</span></div>
+        <a class="primary section-next" href="#countdown">Continuer</a>
+      </section>
+
+      <section class="countdown section" id="countdown" aria-label="Compte à rebours">
+        <p class="section-kicker">Le rendez-vous approche</p>
+        <h2>À bientôt autour d’une tasse de thé</h2>
+        <div class="timer" id="timer">
+          <div><strong id="days">00</strong><span>Jours</span></div>
+          <div><strong id="hours">00</strong><span>Heures</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Secondes</span></div>
+        </div>
+        <a class="primary section-next light" href="#details">Voir les détails</a>
+      </section>
+
+      <section class="details section" id="details">
+        <p class="section-kicker">Tous les détails</p>
+        <h2>Une soirée élégante et mémorable</h2>
+        <div class="cards">
+          <article><span>☕</span><h3>Au programme</h3><p>Thé, musique et surprises dans une ambiance chaleureuse.</p></article>
+          <article><span>♕</span><h3>Tenue</h3><p>Tenue vintage suggérée pour vivre pleinement l’expérience.</p></article>
+          <article><span>✦</span><h3>Admission</h3><p><strong>30 $</strong><br>Réservez votre place à l’avance.</p></article>
+        </div>
+        <a class="primary section-next" href="#location">Découvrir le lieu</a>
+      </section>
+
+      <section class="location section" id="location">
+        <div class="location-card">
+          <p class="section-kicker">Lieu</p>
+          <h2>Église Adventiste Maranatha</h2>
+          <p>3325 Lowry Rd<br>Indianapolis, IN 46222</p>
+          <div class="actions">
+            <a class="primary" target="_blank" rel="noopener" href="https://maps.google.com/?q=3325+Lowry+Rd,+Indianapolis,+IN+46222">Voir l’itinéraire</a>
+            <button class="secondary" id="calendar">Ajouter au calendrier</button>
+          </div>
+          <a class="primary section-next" href="#tickets">Voir les billets</a>
+        </div>
+      </section>
+
+      <section class="ticket section" id="tickets">
+        <p class="section-kicker">Billets</p>
+        <h2>Réservez votre place</h2>
+        <div class="price">30 <sup>$</sup></div>
+        <p class="ticket-copy">Réservez vos billets auprès de la Division des Filles de la SOJAM.</p>
+        <button class="primary" id="contactBtn">Contacter la Division des Filles</button>
+        <a class="secondary section-next" href="#rsvp">Confirmer votre présence</a>
+      </section>
+
+      <section class="rsvp section" id="rsvp">
+        <p class="section-kicker">Votre réponse</p>
+        <h2>Serez-vous des nôtres ?</h2>
+        <form id="rsvpForm" action="https://formsubmit.co/berlielector27@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nouvelle réservation — A Vintage Tea Affair">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Réponse" value="Oui, j’y serai">
+          <label>Nom complet<input id="name" name="Nom complet" required autocomplete="name" placeholder="Votre nom"></label>
+          <label>Adresse courriel<input id="email" type="email" name="Adresse courriel" required autocomplete="email" placeholder="votre@email.com"></label>
+          <label>Téléphone<input id="phone" type="tel" name="Téléphone" required autocomplete="tel" inputmode="tel" placeholder="Votre numéro"></label>
+          <label>Nombre de personnes<select id="guests" name="Nombre de personnes"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></label>
+          <label>Message <small>(facultatif)</small><textarea id="message" name="Message" rows="3" placeholder="Un petit mot..."></textarea></label>
+          <div class="actions"><button class="primary" type="submit" data-answer="Oui">Oui, j’y serai</button><button class="secondary" type="button" id="decline">Je ne pourrai pas</button></div>
+        </form>
+        <div class="confirmation" id="confirmation" hidden></div>
+        <a class="primary section-next" href="#flyer">Voir l’invitation officielle</a>
+      </section>
+
+      <section class="flyer section" id="flyer">
+        <p class="section-kicker">Invitation officielle</p>
+        <h2>Le flyer de l’événement</h2>
+        <img src="assets/flyer.png" alt="Flyer A Vintage Tea Affair">
+        <a class="primary section-next" href="#share-section">Partager avec vos proches</a>
+      </section>
+
+      <section class="share section" id="share-section">
+        <p class="section-kicker">Invitez vos proches</p>
+        <h2>Partagez cette invitation</h2>
+        <button class="primary" id="share">Partager l’invitation</button>
+        <a class="secondary section-next" href="#invitation">Retour au début</a>
+      </section>
+
+      <footer>
+        <span>Flammes de la SOJAM</span>
+        <p>Nous avons hâte de partager cette belle soirée avec vous.</p>
+      </footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
